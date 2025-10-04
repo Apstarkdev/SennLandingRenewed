@@ -106,7 +106,7 @@ const images: string[] = [
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#servicios" className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#0E2A47] hover:bg-[#C2CDE5]">Ver Servicios</a>
-                <a href="#contacto" className="rounded-xl border border-white px-5 py-3 text-sm font-semibold text-white hover:bg-[#43567F]">Solicitar cotización</a>
+                {/* <a href="#contacto" className="rounded-xl border border-white px-5 py-3 text-sm font-semibold text-white hover:bg-[#43567F]">Solicitar cotización</a> */}
               </div>
             </div>
             <div className="relative">
