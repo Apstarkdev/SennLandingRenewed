@@ -48,14 +48,14 @@ export default function Home() {
   // Carousel de imágenes del hero
   // Carousel de imágenes del hero (hasta 8)
 const images: string[] = [
-  "/images/hero/1.jpg",
-  "/images/hero/2.jpg",
-  "/images/hero/3.jpg",
-  "/images/hero/4.jpg",
-  "/images/hero/5.jpg",
-  "/images/hero/6.jpg",
-  "/images/hero/7.jpg",
-  "/images/hero/8.jpg",
+  "/images/hero/1.JPG",
+  "/images/hero/2.PNG",
+  "/images/hero/3.JPG",
+  "/images/hero/4.PNG",
+  "/images/hero/5.JPG",
+  "/images/hero/6.PNG",
+  "/images/hero/7.PNG",
+  "/images/hero/8.PNG",
 ];
   const [slide, setSlide] = useState<number>(0);
   const [paused, setPaused] = useState<boolean>(false);
@@ -438,49 +438,47 @@ Fundada en 2012 por Germán Senn, Ingeniero Civil Industrial con 34 años de exp
 </Section>
 
 
-      {/* Valores */}
-      <section id="valores" className="scroll-mt-24 py-24 bg-[#0E2A47] text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-xs font-semibold uppercase tracking-wider text-white/80">Nuestros pilares</div>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-bold tracking-tight">Valores</h2>
+{/* Valores */}
+<div className="bg-[#0E2A47] text-white py-20">
+  <Section id="valores" title="Valores" eyebrow="nuestros pilares">
+    {/* más margen entre el título y las cards */}
+    <div className="mt-8 grid gap-10 md:grid-cols-3">
+      {/* Valor 01 */}
+      <div className="relative overflow-hidden rounded-2xl bg-white p-10 shadow-sm">
+        <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-[#C2CDE5]" />
+        <div className="text-5xl font-extrabold text-[#C2CDE5]">01</div>
+        <h3 className="mt-3 text-xl font-semibold text-[#0E2A47]">Compromiso con la calidad</h3>
+        <p className="mt-3 text-[#43567F]">Resultados confiables, precisos y ajustados a las necesidades específicas de cada cliente.</p>
+      </div>
 
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {/* Card 01 */}
-            <div className="relative rounded-2xl bg-white p-8 shadow-sm">
-              <div className="absolute -top-4 -left-4 rounded-2xl bg-[#C2CDE5] px-4 py-2 text-2xl font-black text-[#0E2A47]">01</div>
-              <h3 className="mt-6 text-xl font-semibold text-[#0E2A47]">Compromiso con la calidad</h3>
-              <p className="mt-3 text-[#43567F]">
-                Resultados confiables, precisos y ajustados a las necesidades específicas de cada cliente.
-              </p>
-            </div>
+      {/* Valor 02 */}
+      <div className="relative overflow-hidden rounded-2xl bg-white p-10 shadow-sm">
+        <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-[#C2CDE5]" />
+        <div className="text-5xl font-extrabold text-[#C2CDE5]">02</div>
+        <h3 className="mt-3 text-xl font-semibold text-[#0E2A47]">Transparencia y ética</h3>
+        <p className="mt-3 text-[#43567F]">Información clara y accesible para decisiones informadas y seguras.</p>
+      </div>
 
-            {/* Card 02 */}
-            <div className="relative rounded-2xl bg-white p-8 shadow-sm">
-              <div className="absolute -top-4 -left-4 rounded-2xl bg-[#C2CDE5] px-4 py-2 text-2xl font-black text-[#0E2A47]">02</div>
-              <h3 className="mt-6 text-xl font-semibold text-[#0E2A47]">Transparencia y ética</h3>
-              <p className="mt-3 text-[#43567F]">
-                Información clara y accesible para decisiones informadas y seguras.
-              </p>
-            </div>
+      {/* Valor 03 */}
+      <div className="relative overflow-hidden rounded-2xl bg-white p-10 shadow-sm">
+        <div className="absolute -right-6 -top-6 h-28 w-28 rounded-full bg-[#C2CDE5]" />
+        <div className="text-5xl font-extrabold text-[#C2CDE5]">03</div>
+        <h3 className="mt-3 text-xl font-semibold text-[#0E2A47]">Orientación al cliente</h3>
+        <p className="mt-3 text-[#43567F]">Soluciones personalizadas y un servicio ágil, centrado en los objetivos del cliente.</p>
+      </div>
+    </div>
+  </Section>
+</div>
 
-            {/* Card 03 */}
-            <div className="relative rounded-2xl bg-white p-8 shadow-sm">
-              <div className="absolute -top-4 -left-4 rounded-2xl bg-[#C2CDE5] px-4 py-2 text-2xl font-black text-[#0E2A47]">03</div>
-              <h3 className="mt-6 text-xl font-semibold text-[#0E2A47]">Orientación al cliente</h3>
-              <p className="mt-3 text-[#43567F]">
-                Soluciones personalizadas y un servicio ágil, centrado en los objetivos del cliente.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Objetivos */}
-      <section id="objetivos" className="scroll-mt-24 py-20 bg-[#C2CDE5]">
+  <div className="scroll-mt-24 py-20 bg-[#C2CDE5]">
+    <Section id="objetivos" title="Objetivos" eyebrow="">
   <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-bold tracking-tight text-[#0E2A47]">Objetivos</h2>
+    
     <p className="mt-2 text-[#0E2A47] opacity-80">
-      Foco en crecimiento, excelencia y relaciones a largo plazo.
+      
     </p>
 
     <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -541,8 +539,8 @@ Fundada en 2012 por Germán Senn, Ingeniero Civil Industrial con 34 años de exp
       </div>
     </div>
   </div>
-</section>
-
+</Section>
+</div>
 
       {/* Servicios */}
       <Section id="servicios" title="Servicios">
